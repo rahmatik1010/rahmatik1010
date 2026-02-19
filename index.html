@@ -1,165 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rahmat Hidayat | AI & Scalable Systems</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-    background: radial-gradient(circle at top left, #1e3a8a, #0f172a 60%);
-    color: #fff;
-    overflow-x: hidden;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 8%;
-    align-items: center;
-}
-
-nav h2 {
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-nav ul li {
-    cursor: pointer;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-nav ul li:hover {
-    opacity: 1;
-}
-
-/* HERO */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 8%;
-    min-height: 85vh;
-}
-
-.left {
-    max-width: 520px;
-}
-
-.left h1 {
-    font-size: 42px;
-    line-height: 1.3;
-    margin-bottom: 20px;
-}
-
-.left h1 span {
-    color: #38bdf8;
-}
-
-.left p {
-    opacity: 0.8;
-    margin-bottom: 35px;
-}
-
-/* FEATURE CARDS */
-.features {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 18px 22px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    border-color: #38bdf8;
-    transform: translateX(5px);
-}
-
-.card h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #38bdf8;
-}
-
-.card p {
-    font-size: 14px;
-    opacity: 0.8;
-}
-
-/* RIGHT SIDE */
-.right {
-    position: relative;
-}
-
-.profile {
-    width: 380px;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-}
-
-.glow {
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    background: radial-gradient(circle, rgba(56,189,248,0.4), transparent 60%);
-    top: -40px;
-    left: -40px;
-    z-index: -1;
-}
-
-/* FOOTER */
-.footer-text {
-    text-align: center;
-    padding: 40px 20px;
-    opacity: 0.6;
-    font-style: italic;
-}
-
-/* RESPONSIVE */
-@media(max-width: 900px){
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 50px;
-    }
-
-    .features {
-        align-items: center;
-    }
-
-    .card {
-        max-width: 400px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmat Hidayat | AI & Scalable Systems</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <nav>
-    <h2>Hi, I'm Rahmat</h2>
+    <div class="logo">Hi, I'm Rahmat</div>
     <ul>
         <li>Home</li>
         <li>About</li>
@@ -177,25 +27,25 @@ nav ul li:hover {
         </h1>
 
         <p>
-            Fokus pada pengembangan AI agent, backend berperforma tinggi,
-            serta strategi sistem yang membantu bisnis bertumbuh secara otomatis.
+            Mengembangkan AI Agent, backend performa tinggi,
+            dan sistem otomatisasi untuk membantu bisnis berkembang.
         </p>
 
         <div class="features">
 
             <div class="card">
                 <h3>🤖 AI Agents for Business</h3>
-                <p>WhatsApp automation, website AI, dan agentic workflow untuk UMKM.</p>
+                <p>WhatsApp automation, Website AI, Agentic workflow.</p>
             </div>
 
             <div class="card">
                 <h3>⚙ Optimized Backend</h3>
-                <p>Laravel Octane, Supervisor, dan arsitektur scalable production-ready.</p>
+                <p>Laravel Octane, scalable architecture, production monitoring.</p>
             </div>
 
             <div class="card">
                 <h3>📊 Investment Insights</h3>
-                <p>Data-driven thinking berbasis fundamental & long-term strategy.</p>
+                <p>Data-driven strategy berbasis fundamental analysis.</p>
             </div>
 
         </div>
@@ -203,15 +53,15 @@ nav ul li:hover {
 
     <div class="right">
         <div class="glow"></div>
-        <!-- Ganti link gambar ini dengan foto kamu sendiri -->
-        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" class="profile">
+        <img src="assets/profile.png" class="profile">
+        <img src="assets/ai-robot.png" class="robot">
     </div>
 
 </section>
 
-<div class="footer-text">
+<footer>
     Crafting Tomorrow's Technology
-</div>
+</footer>
 
 </body>
 </html>
