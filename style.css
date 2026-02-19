@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url('assets/bg-city.jpg') no-repeat center center/cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* overlay dark */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(10,15,30,0.85);
+    z-index: -1;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 8%;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    opacity: 1;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    min-height: 85vh;
+}
+
+.left {
+    max-width: 520px;
+}
+
+.left h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.left h1 span {
+    color: #38bdf8;
+}
+
+.left p {
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+/* Cards */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateX(8px);
+    border-color: #38bdf8;
+}
+
+/* RIGHT */
+.right {
+    position: relative;
+}
+
+.profile {
+    width: 380px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.robot {
+    position: absolute;
+    bottom: -20px;
+    left: -120px;
+    width: 200px;
+    opacity: 0.85;
+}
+
+.glow {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(56,189,248,0.4), transparent 60%);
+    top: -40px;
+    left: -40px;
+    z-index: 1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .robot {
+        display: none;
+    }
+}
